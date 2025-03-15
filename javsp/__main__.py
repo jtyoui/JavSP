@@ -427,8 +427,7 @@ def RunNormalMode(all_movies):
         """检查一个整理步骤的结果，并负责更新tqdm的进度"""
         if result:
             inner_bar.update()
-        else:
-            raise Exception(msg + '\n')
+
 
     outer_bar = tqdm(all_movies, desc='整理影片', ascii=True, leave=False)
     total_step = 6
